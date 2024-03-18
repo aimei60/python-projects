@@ -1,6 +1,6 @@
 def questions(question, correct_answer):
     response = input(question)
-    if response.lower() == correct_answer.lower():
+    if response == correct_answer.lower():
         print("Correct")
         return 1
     else:
