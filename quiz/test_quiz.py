@@ -1,5 +1,6 @@
 import unittest
 from unittest.mock import patch
+from unittest.mock import call
 from quiz import questions, quiz 
 
 class TestQuizGame(unittest.TestCase):
@@ -17,7 +18,6 @@ class TestQuizGame(unittest.TestCase):
                 call("4. What is the name of the scale used to measure spiciness of peppers? "),
                 call("5. What is the capital of Australia? ",)
                 ]
-        #check why calls not working
         mock_input.assert_has_calls(question_calls, any_order=False)
 
 if __name__ == '__main__':
