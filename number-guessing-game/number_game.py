@@ -3,18 +3,13 @@ print("Guess the number game!")
 
 def numbers():
     top_number = input("Enter a number for the maximum guess value: ")
-    if int(top_number) <= 0:
-        print("Value entered is too small. Enter a value bigger than 0.")
+    if not top_number.isdigit() or int(top_number) <= 0:
+        print("Incorrect value, please enter a number bigger than 0")
         top_number = input("Enter a number for the maximum guess value: ")
-    if not top_number.isdigit():
-        print("Value entered is not a number.")
-        top_number = input("Enter a number for the maximum guess value: ")
-    else:
-        number_to_guess = int(top_number)
-        number = random.randrange(1, number_to_guess + 1)
-        return number
     
-
+    number_to_guess = int(top_number)
+    number = random.randrange(1, number_to_guess + 1)
+    return number
        
 def game():
     user_guess = int(input("Enter a guess: "))
