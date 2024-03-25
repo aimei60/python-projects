@@ -6,7 +6,7 @@ def numbers():
     if not top_number.isdigit() or int(top_number) <= 0:
         print("Incorrect value, please enter a number bigger than 0")
         top_number = input("Enter a number for the maximum guess value: ")
-    
+  
     number_to_guess = int(top_number)
     number = random.randrange(1, number_to_guess + 1)
     return number
