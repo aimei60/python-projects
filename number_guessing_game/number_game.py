@@ -10,23 +10,24 @@ def numbers():
     number_to_guess = int(top_number)
     number = random.randrange(1, number_to_guess + 1)
     return number
-       
-def game():
-    user_guess = int(input("Enter a guess: "))
-    guess = 0
-    while user_guess != number:
-        if user_guess > number:
-            print("Your number is too high, guess again!")
-            user_guess = int(input("Enter a guess: "))
-            guess += 1
-        elif user_guess < number:
-            print("Your number is too low, guess again!")
-            user_guess = int(input("Enter a guess: "))
-            guess += 1
-    if user_guess == number:
-            guess += 1
-            print("You guessed correct! You guessed in", guess, "guesses!")
 
+def game():
+    guess = 0
+    while True:
+        try:
+            user_guess = int(input("Enter a guess: "))
+            if user_guess == number:
+                guess += 1
+                print(f"You guessed correct! You guessed in {guess} guesses!")
+                break
+            elif user_guess > number:
+                print("Your number is too high, guess again!")
+            else:
+                print("Your number is too low, guess again!")
+            guess += 1
+        except ValueError:
+            print("That's not a valid number. Please enter an integer.")
+       
 number = numbers()
 game()
 
