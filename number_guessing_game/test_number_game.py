@@ -24,6 +24,8 @@ class TestQuiz(unittest.TestCase):
         result = numbers() #check calling numbers works
         self.assertEqual(result, expected_random_number)
         mock_randrange.assert_called_once_with(1, 11)
+        
+    
     
 if __name__ == "__main__":
     unittest.main()  
