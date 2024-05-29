@@ -13,10 +13,7 @@ class TestWeatherAPI(unittest.TestCase):
         }
         mock_get.return_value = mock_response
         get_API()
-       
-        
-        
-        
+           
 if __name__ == "__main__":
     unittest.main()
 
