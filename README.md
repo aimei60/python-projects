@@ -2,12 +2,12 @@
 
 I completed 18 Python projects inspired by [this tutorial](https://www.youtube.com/watch?v=NpmFbWO6HPU). 
 
-In addition these projects, I implemented my own testing to practise testing my code.
+In addition to these projects, I implemented my own testing to practise testing my code.
 
 ## Technologies Used
 
 - Python 3  
-- Unit testing  pytho
+- Unit testing
 - Mocking
 
 ## Projects Included
