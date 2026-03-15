@@ -1,6 +1,6 @@
 # Python Projects
 
-I completed 18 Python projects inspired by [Tech with Tim's Python Project's Tutorial](https://www.youtube.com/watch?v=NpmFbWO6HPU). 
+I completed 18 Python projects inspired by [Tech with Tim's Python projects tutorial](https://www.youtube.com/watch?v=NpmFbWO6HPU). 
 
 In addition to these projects, I implemented my own testing to practise testing my code.
 
